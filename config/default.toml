@@ -1,0 +1,31 @@
+[optimizer]
+profile = "competitive"
+auto_apply_on_launch = true
+restore_on_exit = true
+
+[network]
+tcp_ack_frequency = 1
+nagle_algorithm = false
+tcp_nodelay = true
+dns_cache_ttl = 300
+
+[graphics]
+force_dx11 = false
+disable_fullscreen_optimizations = true
+gpu_scheduling_priority = "high"
+shader_cache_size_mb = 2048
+
+[input]
+raw_mouse_input = true
+usb_polling_hz = 1000
+mouse_acceleration = false
+
+[process]
+priority = "high"
+affinity_mask = "0xFFFF"
+disable_game_bar = true
+disable_xbox_game_dvr = true
+
+[logging]
+level = "info"
+file = "logs/optimizer.log"
