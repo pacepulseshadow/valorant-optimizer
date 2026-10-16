@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "valorant-optimizer config",
+  "type": "object",
+  "properties": {
+    "optimizer": {
+      "type": "object",
+      "properties": {
+        "profile": { "enum": ["competitive", "balanced", "streaming", "low_end"] },
+        "auto_apply_on_launch": { "type": "boolean" },
+        "restore_on_exit": { "type": "boolean" }
+      }
+    },
+    "network": {
+      "type": "object",
+      "properties": {
+        "tcp_ack_frequency": { "type": "integer", "minimum": 1, "maximum": 255 },
+        "nagle_algorithm": { "type": "boolean" },
+        "tcp_nodelay": { "type": "boolean" }
+      }
+    },
+    "graphics": { "type": "object" },
+    "input": { "type": "object" },
+    "process": { "type": "object" },
+    "logging": { "type": "object" }
+  },
+  "required": ["optimizer"]
+}
