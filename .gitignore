@@ -1,0 +1,49 @@
+# Build output
+build/
+out/
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.obj
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.vcxproj.user
+*.aps
+*.ncb
+*.sdf
+
+# Rider / CLion
+.idea/
+*.sln.iml
+
+# NuGet
+packages/
+*.nupkg
+
+# Logs and runtime dumps
+logs/
+dumps/
+*.log
+*.dmp
+
+# Config with local paths
+config/local.json
+config/user.toml
+
+# Env
+.env
+.env.local
